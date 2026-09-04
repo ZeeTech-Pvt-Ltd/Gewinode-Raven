@@ -1473,7 +1473,8 @@ button {
     margin-right: auto;
   }
   .hero__cta,
-  .hero__trust {
+  .hero__trust,
+  .hero__steps {
     justify-content: center;
   }
   .hero__readout {
