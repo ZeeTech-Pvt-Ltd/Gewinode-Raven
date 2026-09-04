@@ -7,9 +7,9 @@ import { PRODUCT, CAPABILITIES } from '../data/content.js';
 
 export default function HowItWorks() {
   useMeta({
-    title: 'How It Works | Gewinode Raven',
+    title: 'How Gewinode Raven Works | 3 Steps to AI Trading',
     description:
-      'How the Gewinode Raven platform works: create your account in minutes, fund from A$250, and let the AI trading engine trade around the clock.',
+      'See how Gewinode Raven works: create your account in minutes, fund from A$250 and let the AI trading engine analyse and trade around the clock.',
     path: '/how-it-works',
   });
 

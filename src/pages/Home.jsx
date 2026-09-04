@@ -15,9 +15,9 @@ import FinalCta from '../sections/FinalCta.jsx';
 
 export default function Home() {
   useMeta({
-    title: 'Gewinode Raven | AI-Powered Trading Platform for Australia',
+    title: 'Gewinode Raven: AI-Powered Trading Platform for Australia',
     description:
-      'Gewinode Raven is the AI-powered trading platform for verified Australian residents. Automated trading at 85% accuracy, 95% cold storage, zero hidden fees and 24/7 support.',
+      "Gewinode Raven is Australia's AI-powered trading platform. Automated trading at 85% accuracy, 95% cold storage and 24/7 support.",
     path: '/',
   });
 

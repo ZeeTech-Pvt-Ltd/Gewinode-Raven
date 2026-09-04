@@ -5,9 +5,9 @@ import { BLOG_POSTS } from '../data/content.js';
 
 export default function Blog() {
   useMeta({
-    title: 'Blog | Gewinode Raven',
+    title: 'Gewinode Raven Blog | AI Trading Insights & Guides',
     description:
-      'Insights from the Gewinode Raven team: how AI reads markets, cold storage explained, and the habits of calm investors.',
+      'Insights from the Gewinode Raven team: how AI reads markets, cold storage explained and the habits of calm investors. New articles every two weeks.',
     path: '/blog',
   });
 

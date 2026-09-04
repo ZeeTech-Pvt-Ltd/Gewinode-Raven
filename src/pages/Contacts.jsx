@@ -6,7 +6,7 @@ import { CONTACTS } from '../data/content.js';
 
 export default function Contacts() {
   useMeta({
-    title: 'Contact Us | Gewinode Raven',
+    title: 'Contact Gewinode Raven | 24/7 Support Team',
     description:
       'Contact the Gewinode Raven support team 24/7 by email or request a callback. Average first response time: under 5 minutes.',
     path: '/contact-us',

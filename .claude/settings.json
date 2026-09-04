@@ -25,7 +25,9 @@
       "Bash(node \"C:/Users/samee/AppData/Local/Temp/verify-cc2.mjs\")",
       "Bash(node \"C:/Users/samee/AppData/Local/Temp/verify-cc3.mjs\")",
       "Bash(node \"C:/Users/samee/AppData/Local/Temp/audit-resp.mjs\")",
-      "Bash(node \"C:/Users/samee/AppData/Local/Temp/debug-dd.mjs\")"
+      "Bash(node \"C:/Users/samee/AppData/Local/Temp/debug-dd.mjs\")",
+      "Bash(node \"C:/Users/samee/AppData/Local/Temp/verify-seo.mjs\")",
+      "Bash(node \"C:/Users/samee/AppData/Local/Temp/audit-seo.mjs\")"
     ],
     "additionalDirectories": [
       "C:\\Users\\samee\\AppData\\Local\\Temp"

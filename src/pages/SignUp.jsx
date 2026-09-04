@@ -4,9 +4,9 @@ import { SITE } from '../data/content.js';
 
 export default function SignUp() {
   useMeta({
-    title: 'Sign Up | Gewinode Raven',
+    title: 'Sign Up | Open a Gewinode Raven Account Today',
     description:
-      'Open your Gewinode Raven account in minutes. Registration is limited to verified residents of Australia.',
+      'Open your Gewinode Raven trading account in minutes. Join 3.5 million members, fund from A$250 and let the AI engine trade for you.',
     path: '/sign-up',
   });
 

@@ -26,6 +26,11 @@ export const HERO = {
   sub: 'The intelligent trading platform for verified residents of Australia. Our AI engine reads the market around the clock, so you can trade with confidence — without staring at charts all day.',
   ctaPrimary: { label: 'Register Now', to: '/sign-up' },
   ctaSecondary: { label: 'See how it works', to: '/how-it-works' },
+  steps: [
+    'Register in 2 minutes',
+    'Verify as an Australian resident',
+    'Fund from A$250 — the engine starts trading',
+  ],
   trust: ['2FA & 256-bit SSL', '95% cold storage', '24/7 support'],
   readout: {
     title: 'live signal feed',
@@ -367,7 +372,7 @@ export const ABOUT = {
 
 export const PRODUCT = {
   title: 'How Gewinode Raven works',
-  lead: 'Three steps stand between you and an intelligent trading engine that never sleeps.',
+  lead: 'Three steps stand between you and the Gewinode Raven trading engine — which never sleeps.',
   steps: [
     {
       icon: 'user',
@@ -393,7 +398,7 @@ export const PRODUCT = {
 
 export const WHY = {
   title: 'Why invest with Gewinode Raven',
-  lead: 'Six reasons 3.5 million members chose us over conventional trading.',
+  lead: 'Six reasons 3.5 million members chose Gewinode Raven over conventional trading.',
   items: [
     {
       icon: 'bolt',
@@ -433,7 +438,7 @@ export const WHY = {
 
 export const CONTACTS = {
   title: 'Talk to the Gewinode Raven team',
-  lead: 'Questions about your account, the platform or anything else — we answer around the clock.',
+  lead: 'Questions about your Gewinode Raven account, the platform or anything else — we answer around the clock.',
   email: 'support@gewinoderaven.com',
   hours: '24/7, every day of the year',
   response: 'Average first response: under 5 minutes',
@@ -443,6 +448,8 @@ export const CONTACTS = {
 export const LEGAL = {
   privacy: {
     title: 'Privacy Policy',
+    description:
+      'How Gewinode Raven collects, uses and protects your personal information on our AI-powered trading platform.',
     updated: 'Last updated: 1 September 2026',
     sections: [
       {
@@ -477,6 +484,8 @@ export const LEGAL = {
   },
   terms: {
     title: 'Terms of Use',
+    description:
+      'The terms and conditions that govern your use of the Gewinode Raven trading platform and website.',
     updated: 'Last updated: 1 September 2026',
     sections: [
       {
@@ -519,6 +528,8 @@ export const LEGAL = {
   },
   risk: {
     title: 'Risk Disclosure',
+    description:
+      'Understand the risks before trading with Gewinode Raven. Trading carries a high level of risk and may not suit all investors.',
     updated: 'Last updated: 1 September 2026',
     sections: [
       {

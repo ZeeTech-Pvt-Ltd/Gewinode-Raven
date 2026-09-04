@@ -3,8 +3,9 @@ import useMeta from '../hooks/useMeta.js';
 
 export default function SignIn() {
   useMeta({
-    title: 'Sign In | Gewinode Raven',
-    description: 'Sign in to your Gewinode Raven account and return to your trading dashboard.',
+    title: 'Sign In | Access Your Gewinode Raven Account',
+    description:
+      'Sign in to your Gewinode Raven account to view your dashboard, live trades and portfolio performance.',
     path: '/sign-in',
   });
 

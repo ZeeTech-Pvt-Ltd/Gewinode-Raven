@@ -7,9 +7,9 @@ import { ABOUT } from '../data/content.js';
 
 export default function AboutUs() {
   useMeta({
-    title: 'About Us | Gewinode Raven',
+    title: 'About Gewinode Raven | Our Story, Values & Mission',
     description:
-      'Gewinode Raven was founded in Sydney by quantitative engineers and market veterans. Learn about our story, values and what makes our trading platform different.',
+      'Meet the team behind Gewinode Raven — founded in Sydney by engineers and market veterans. Our story, values and what makes our AI trading platform different.',
     path: '/about-us',
   });
 

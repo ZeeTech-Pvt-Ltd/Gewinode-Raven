@@ -5,8 +5,9 @@ import useMeta from '../hooks/useMeta.js';
 
 export default function ThankYou() {
   useMeta({
-    title: 'Thank You | Gewinode Raven',
-    description: 'Your Gewinode Raven registration has been received. Our team will contact you shortly.',
+    title: 'Thank You | Gewinode Raven Registration Received',
+    description:
+      'Your Gewinode Raven registration has been received. Our team will contact you shortly to complete your account setup.',
     path: '/thank-you',
   });
 

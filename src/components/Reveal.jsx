@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 
 // Fades content in when it scrolls into view. Respects prefers-reduced-motion (CSS handles it).
-export default function Reveal({ children, delay = 0, className = '', style, as: Tag = 'div' }) {
+export default function Reveal({ children, delay = 0, className = '', style, as: Tag = 'div', ...rest }) {
   const ref = useRef(null);
 
   useEffect(() => {
@@ -25,6 +25,7 @@ export default function Reveal({ children, delay = 0, className = '', style, as:
       ref={ref}
       className={`reveal ${className}`}
       style={delay ? { ...style, transitionDelay: `${delay}ms` } : style}
+      {...rest}
     >
       {children}
     </Tag>

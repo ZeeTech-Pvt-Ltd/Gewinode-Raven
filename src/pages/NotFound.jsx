@@ -4,7 +4,8 @@ import useMeta from '../hooks/useMeta.js';
 export default function NotFound() {
   useMeta({
     title: 'Page Not Found | Gewinode Raven',
-    description: 'The page you were looking for could not be found.',
+    description:
+      "The page you were looking for could not be found. Explore Gewinode Raven's AI-powered trading platform instead.",
     path: '/',
   });
 

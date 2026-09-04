@@ -4,7 +4,9 @@ import useMeta from '../hooks/useMeta.js';
 export default function LegalPage({ content, path }) {
   useMeta({
     title: `${content.title} | Gewinode Raven`,
-    description: `${content.title} for the Gewinode Raven platform.`,
+    description:
+      content.description ||
+      `${content.title} for the Gewinode Raven AI trading platform — Australian trading with AI precision.`,
     path,
   });
 

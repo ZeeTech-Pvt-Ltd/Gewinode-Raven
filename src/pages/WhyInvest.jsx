@@ -7,9 +7,9 @@ import { WHY } from '../data/content.js';
 
 export default function WhyInvest() {
   useMeta({
-    title: 'Why Invest | Gewinode Raven',
+    title: 'Why Invest with Gewinode Raven | 6 Reasons',
     description:
-      'Six reasons to invest with Gewinode Raven: a 24/7 AI trading engine, 85% execution accuracy, bank-grade security, transparency and fast withdrawals.',
+      'Six reasons Australians choose Gewinode Raven: a 24/7 AI trading engine, 85% execution accuracy, bank-grade security, transparency and fast withdrawals.',
     path: '/why-invest',
   });
 

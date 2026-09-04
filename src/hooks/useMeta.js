@@ -1,5 +1,11 @@
 import { useEffect } from 'react';
-import { SITE } from '../data/content.js';
+import { SITE, NAV_LINKS } from '../data/content.js';
+
+const titleCase = (slug) =>
+  slug
+    .split('-')
+    .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+    .join(' ');
 
 const setOrCreate = (attr, value, content) => {
   if (!content) return;
@@ -23,6 +29,8 @@ export default function useMeta({ title, description, path = '/' }) {
     setOrCreate('property', 'og:url', url);
     setOrCreate('property', 'og:image', `${SITE.url}og-image.png`);
     setOrCreate('property', 'og:type', 'website');
+    setOrCreate('property', 'og:site_name', SITE.name);
+    setOrCreate('property', 'og:locale', 'en_AU');
     setOrCreate('name', 'twitter:card', 'summary_large_image');
     setOrCreate('name', 'twitter:title', title);
     setOrCreate('name', 'twitter:description', description);
@@ -35,5 +43,31 @@ export default function useMeta({ title, description, path = '/' }) {
       document.head.appendChild(link);
     }
     link.setAttribute('href', url);
+
+    // BreadcrumbList schema on inner pages.
+    if (path !== '/') {
+      const slug = path.replace(/^\//, '').replace(/\/$/, '');
+      const label =
+        NAV_LINKS.find((l) => l.to === path)?.label ||
+        titleCase(slug.replace(/-/g, ' '));
+      const breadcrumb = {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: SITE.url },
+          { '@type': 'ListItem', position: 2, name: label, item: url },
+        ],
+      };
+      let script = document.getElementById('breadcrumb-json');
+      if (!script) {
+        script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.id = 'breadcrumb-json';
+        document.head.appendChild(script);
+      }
+      script.textContent = JSON.stringify(breadcrumb);
+    } else {
+      document.getElementById('breadcrumb-json')?.remove();
+    }
   }, [title, description, path]);
 }

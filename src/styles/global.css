@@ -458,6 +458,21 @@ button {
   margin-bottom: 34px;
 }
 
+.hero__steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 14px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 20px;
+}
+
+.hero__steps-sep {
+  color: var(--ember);
+  margin-right: 14px;
+}
+
 .hero__trust {
   display: flex;
   flex-wrap: wrap;
@@ -698,6 +713,7 @@ button {
 .grid--2 { grid-template-columns: repeat(2, 1fr); }
 
 .card {
+  display: block;
   background: var(--surface);
   border: 1px solid var(--line-soft);
   border-radius: var(--radius);
@@ -740,6 +756,11 @@ button {
   justify-content: center;
   color: var(--ember-bright);
   margin-bottom: 18px;
+}
+
+.section-cta {
+  text-align: center;
+  margin-top: 44px;
 }
 
 .card__num {

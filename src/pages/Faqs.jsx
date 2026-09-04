@@ -1,15 +1,16 @@
 import { Link } from 'react-router';
 import Icon from '../components/Icon.jsx';
 import FaqList from '../components/FaqList.jsx';
+import FaqSchema from '../components/FaqSchema.jsx';
 import Reveal from '../components/Reveal.jsx';
 import useMeta from '../hooks/useMeta.js';
 import { FAQS, SITE } from '../data/content.js';
 
 export default function Faqs() {
   useMeta({
-    title: 'FAQ | Gewinode Raven',
+    title: 'Gewinode Raven FAQ | Fees, Security & Withdrawals',
     description:
-      'Frequently asked questions about Gewinode Raven: legitimacy, minimum deposit, fund security, withdrawals, regulation and avoiding imitation sites.',
+      'Answers to common questions about Gewinode Raven: legitimacy, minimum deposit, fund security, withdrawals, regulation and avoiding imitation sites.',
     path: '/faq',
   });
 
@@ -18,13 +19,15 @@ export default function Faqs() {
       <div className="page-hero">
         <div className="page-hero__glow" />
         <div className="container">
-          <h1 className="section-title">Frequently asked questions</h1>
+          <h1 className="section-title">Frequently asked questions about Gewinode Raven</h1>
           <p className="section-lead">
-            Everything members ask us most — answered plainly. Still unsure? Contact us any time.
+            Everything members ask us most about Gewinode Raven — answered plainly. Still unsure?
+            Contact us any time.
           </p>
         </div>
       </div>
 
+      <FaqSchema />
       <section className="section section--surface">
         <div className="container">
           <FaqList items={FAQS} />

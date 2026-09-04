@@ -76,6 +76,15 @@ export default function Hero() {
               </Link>
             </div>
 
+            <div className="hero__steps">
+              {HERO.steps.map((s, i) => (
+                <span key={s}>
+                  {i > 0 && <span className="hero__steps-sep">→</span>}
+                  {s}
+                </span>
+              ))}
+            </div>
+
             <div className="hero__trust">
               {HERO.trust.map((t) => (
                 <span key={t}>
