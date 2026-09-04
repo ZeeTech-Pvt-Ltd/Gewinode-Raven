@@ -6,7 +6,7 @@ import { FEATURES } from '../data/content.js';
 
 export default function Features() {
   return (
-    <section className="section section--deep">
+    <section className="section section--deep features">
       <div className="container">
         <SectionHead title={FEATURES.title} lead={FEATURES.lead} />
         <div className="grid grid--4">

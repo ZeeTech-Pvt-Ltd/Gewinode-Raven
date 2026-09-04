@@ -9,6 +9,7 @@ export default function ThankYou() {
     description:
       'Your Gewinode Raven registration has been received. Our team will contact you shortly to complete your account setup.',
     path: '/thank-you',
+    keywords: ['Gewinode Raven registration', 'Gewinode Raven account confirmation'],
   });
 
   return (

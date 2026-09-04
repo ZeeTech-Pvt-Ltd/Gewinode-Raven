@@ -11,6 +11,12 @@ export default function WhyInvest() {
     description:
       'Six reasons Australians choose Gewinode Raven: a 24/7 AI trading engine, 85% execution accuracy, bank-grade security, transparency and fast withdrawals.',
     path: '/why-invest',
+    keywords: [
+      'Gewinode Raven why invest',
+      'benefits of AI trading',
+      'automated trading benefits',
+      'secure trading Australia',
+    ],
   });
 
   return (
@@ -31,7 +37,7 @@ export default function WhyInvest() {
                 <div className="card__icon">
                   <Icon name={w.icon} size={24} />
                 </div>
-                <h3>{w.title}</h3>
+                <h2>{w.title}</h2>
                 <p>{w.text}</p>
               </Reveal>
             ))}

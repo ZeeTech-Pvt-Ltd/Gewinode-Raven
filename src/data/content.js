@@ -448,8 +448,10 @@ export const CONTACTS = {
 export const LEGAL = {
   privacy: {
     title: 'Privacy Policy',
+    seoTitle: 'Gewinode Raven Privacy Policy | Your Data & Security',
     description:
       'How Gewinode Raven collects, uses and protects your personal information on our AI-powered trading platform.',
+    keywords: ['Gewinode Raven privacy policy', 'trading platform privacy', 'data protection Australia'],
     updated: 'Last updated: 1 September 2026',
     sections: [
       {
@@ -484,8 +486,10 @@ export const LEGAL = {
   },
   terms: {
     title: 'Terms of Use',
+    seoTitle: 'Gewinode Raven Terms of Use | Trading Conditions',
     description:
       'The terms and conditions that govern your use of the Gewinode Raven trading platform and website.',
+    keywords: ['Gewinode Raven terms of use', 'trading platform terms', 'Gewinode Raven conditions'],
     updated: 'Last updated: 1 September 2026',
     sections: [
       {
@@ -528,8 +532,10 @@ export const LEGAL = {
   },
   risk: {
     title: 'Risk Disclosure',
+    seoTitle: 'Gewinode Raven Risk Disclosure | Trading Risks Explained',
     description:
       'Understand the risks before trading with Gewinode Raven. Trading carries a high level of risk and may not suit all investors.',
+    keywords: ['Gewinode Raven risk disclosure', 'trading risk warning', 'investment risk Australia'],
     updated: 'Last updated: 1 September 2026',
     sections: [
       {

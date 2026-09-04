@@ -12,6 +12,12 @@ export default function Faqs() {
     description:
       'Answers to common questions about Gewinode Raven: legitimacy, minimum deposit, fund security, withdrawals, regulation and avoiding imitation sites.',
     path: '/faq',
+    keywords: [
+      'Gewinode Raven FAQ',
+      'trading platform questions',
+      'withdrawal time trading',
+      'trading platform regulation',
+    ],
   });
 
   return (

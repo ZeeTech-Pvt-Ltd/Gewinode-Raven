@@ -9,6 +9,12 @@ export default function Blog() {
     description:
       'Insights from the Gewinode Raven team: how AI reads markets, cold storage explained and the habits of calm investors. New articles every two weeks.',
     path: '/blog',
+    keywords: [
+      'Gewinode Raven blog',
+      'AI trading insights',
+      'trading education',
+      'cold storage explained',
+    ],
   });
 
   return (
@@ -33,7 +39,7 @@ export default function Blog() {
                   <span>·</span>
                   {post.readTime}
                 </div>
-                <h3>{post.title}</h3>
+                <h2>{post.title}</h2>
                 <p>{post.excerpt}</p>
                 <span className="blog-card__more">Full article coming soon →</span>
               </Reveal>

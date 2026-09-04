@@ -59,9 +59,6 @@ export default function Hero() {
             <h1 className="hero__title">
               <span className="ember">Gewinode Raven</span> puts AI-powered precision behind
               every trade
-              <span className="caret" aria-hidden="true">
-                ▊
-              </span>
             </h1>
 
             <p className="hero__sub">{HERO.sub}</p>

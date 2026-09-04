@@ -10,6 +10,12 @@ export default function Contacts() {
     description:
       'Contact the Gewinode Raven support team 24/7 by email or request a callback. Average first response time: under 5 minutes.',
     path: '/contact-us',
+    keywords: [
+      'Gewinode Raven contact',
+      'trading support Australia',
+      '24/7 trading support',
+      'Gewinode Raven callback',
+    ],
   });
 
   return (
@@ -30,7 +36,7 @@ export default function Contacts() {
                 <div className="card__icon">
                   <Icon name="mail" size={24} />
                 </div>
-                <h3>Email us</h3>
+                <h2>Email us</h2>
                 <p>
                   For account, verification and general questions. We answer around the clock.
                 </p>
@@ -40,7 +46,7 @@ export default function Contacts() {
                 <div className="card__icon">
                   <Icon name="headset" size={24} />
                 </div>
-                <h3>Support hours</h3>
+                <h2>Support hours</h2>
                 <p>{CONTACTS.hours}</p>
                 <span className="big">{CONTACTS.response}</span>
               </div>
@@ -48,7 +54,7 @@ export default function Contacts() {
                 <div className="card__icon">
                   <Icon name="shield-check" size={24} />
                 </div>
-                <h3>Stay safe</h3>
+                <h2>Stay safe</h2>
                 <p>{CONTACTS.note}</p>
                 <span className="big">gewinoderaven.com is our only official domain</span>
               </div>

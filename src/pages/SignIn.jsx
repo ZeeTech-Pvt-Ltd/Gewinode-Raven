@@ -7,6 +7,7 @@ export default function SignIn() {
     description:
       'Sign in to your Gewinode Raven account to view your dashboard, live trades and portfolio performance.',
     path: '/sign-in',
+    keywords: ['Gewinode Raven sign in', 'Gewinode Raven login', 'trading account login'],
   });
 
   return (

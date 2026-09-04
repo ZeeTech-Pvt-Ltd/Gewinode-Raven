@@ -18,12 +18,21 @@ const setOrCreate = (attr, value, content) => {
   el.setAttribute('content', content);
 };
 
-export default function useMeta({ title, description, path = '/' }) {
+const BASE_KEYWORDS = [
+  'Gewinode Raven',
+  'AI trading platform',
+  'automated trading',
+  'AI trading engine',
+  'trading platform Australia',
+];
+
+export default function useMeta({ title, description, path = '/', keywords = [] }) {
   useEffect(() => {
     const url = `${SITE.url.replace(/\/$/, '')}${path}`;
     document.title = title;
 
     setOrCreate('name', 'description', description);
+    setOrCreate('name', 'keywords', [...BASE_KEYWORDS, ...keywords].join(', '));
     setOrCreate('property', 'og:title', title);
     setOrCreate('property', 'og:description', description);
     setOrCreate('property', 'og:url', url);
@@ -69,5 +78,5 @@ export default function useMeta({ title, description, path = '/' }) {
     } else {
       document.getElementById('breadcrumb-json')?.remove();
     }
-  }, [title, description, path]);
+  }, [title, description, path, keywords.join(',')]);
 }

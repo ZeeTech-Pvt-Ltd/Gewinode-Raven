@@ -432,18 +432,6 @@ button {
   color: transparent;
 }
 
-.hero__title .caret {
-  display: inline-block;
-  width: 0.5ch;
-  color: var(--ember);
-  animation: blink 1.1s steps(1) infinite;
-  font-weight: 400;
-}
-
-@keyframes blink {
-  50% { opacity: 0; }
-}
-
 .hero__sub {
   color: var(--muted);
   font-size: 1.08rem;
@@ -763,6 +751,11 @@ button {
   margin-top: 44px;
 }
 
+/* Features section: smaller card subheadings */
+.features .card h3 {
+  font-size: 16px;
+}
+
 .card__num {
   font-family: var(--font-mono);
   font-size: 11px;
@@ -773,7 +766,8 @@ button {
   display: block;
 }
 
-.card h3 {
+.card h3,
+.card h2 {
   font-family: var(--font-display);
   font-size: 17.5px;
   font-weight: 600;
@@ -1016,7 +1010,7 @@ button {
   margin-bottom: 12px;
 }
 
-.caps__cell h4 {
+.caps__cell h3 {
   font-family: var(--font-display);
   font-size: 15.5px;
   font-weight: 600;
@@ -1067,7 +1061,7 @@ button {
   max-width: 300px;
 }
 
-.footer h4 {
+.footer h2 {
   font-family: var(--font-display);
   font-size: 13px;
   font-weight: 600;
@@ -1293,7 +1287,7 @@ button {
 .page-hero {
   position: relative;
   background: var(--bg-deep);
-  padding: 80px 0 64px;
+  padding: 150px 0 110px;
   text-align: center;
   overflow: hidden;
 }
@@ -1381,7 +1375,7 @@ button {
   color: var(--muted);
 }
 
-.blog-card h3 {
+.blog-card h2 {
   font-family: var(--font-display);
   font-size: 19px;
   font-weight: 600;
@@ -1410,7 +1404,7 @@ button {
   height: 100%;
 }
 
-.contact-card h3 {
+.contact-card h2 {
   font-family: var(--font-display);
   font-size: 18px;
   font-weight: 600;

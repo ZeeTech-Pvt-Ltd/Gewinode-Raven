@@ -19,6 +19,13 @@ export default function Home() {
     description:
       "Gewinode Raven is Australia's AI-powered trading platform. Automated trading at 85% accuracy, 95% cold storage and 24/7 support.",
     path: '/',
+    keywords: [
+      'automated trading Australia',
+      'AI trading Australia',
+      'secure trading platform',
+      'cold storage trading',
+      'trading engine 85% accuracy',
+    ],
   });
 
   return (

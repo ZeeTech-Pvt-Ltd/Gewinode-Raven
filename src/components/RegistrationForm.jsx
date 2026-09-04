@@ -177,7 +177,7 @@ export default function RegistrationForm({
 
   return (
     <form className="form form-wrap" onSubmit={handleSubmit} noValidate>
-      <h3 className="form__title">{title}</h3>
+      <h2 className="form__title">{title}</h2>
       <p className="form__sub">{subtitle}</p>
 
       {formError && (

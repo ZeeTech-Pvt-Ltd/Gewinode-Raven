@@ -8,6 +8,12 @@ export default function SignUp() {
     description:
       'Open your Gewinode Raven trading account in minutes. Join 3.5 million members, fund from A$250 and let the AI engine trade for you.',
     path: '/sign-up',
+    keywords: [
+      'Gewinode Raven sign up',
+      'open trading account Australia',
+      'AI trading registration',
+      'Gewinode Raven register',
+    ],
   });
 
   return (

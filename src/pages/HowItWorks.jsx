@@ -11,6 +11,12 @@ export default function HowItWorks() {
     description:
       'See how Gewinode Raven works: create your account in minutes, fund from A$250 and let the AI trading engine analyse and trade around the clock.',
     path: '/how-it-works',
+    keywords: [
+      'Gewinode Raven how it works',
+      'how AI trading works',
+      'automated trading setup',
+      'minimum deposit A$250',
+    ],
   });
 
   return (
@@ -32,7 +38,7 @@ export default function HowItWorks() {
                 <div className="card__icon">
                   <Icon name={s.icon} size={24} />
                 </div>
-                <h3>{s.title}</h3>
+                <h2>{s.title}</h2>
                 <p>{s.text}</p>
               </Reveal>
             ))}
@@ -47,7 +53,7 @@ export default function HowItWorks() {
             {CAPABILITIES.items.map((c, i) => (
               <Reveal className="caps__cell" delay={(i % 4) * 70} key={c.title}>
                 <Icon name={c.icon} size={24} />
-                <h4>{c.title}</h4>
+                <h3>{c.title}</h3>
                 <p>{c.text}</p>
               </Reveal>
             ))}

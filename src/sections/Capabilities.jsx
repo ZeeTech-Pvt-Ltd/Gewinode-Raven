@@ -16,7 +16,7 @@ export default function Capabilities() {
           {CAPABILITIES.items.map((c, i) => (
             <Reveal className="caps__cell" delay={(i % 4) * 70} key={c.title}>
               <Icon name={c.icon} size={24} />
-              <h4>{c.title}</h4>
+              <h3>{c.title}</h3>
               <p>{c.text}</p>
             </Reveal>
           ))}

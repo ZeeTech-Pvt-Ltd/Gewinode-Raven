@@ -9,8 +9,14 @@ export default function AboutUs() {
   useMeta({
     title: 'About Gewinode Raven | Our Story, Values & Mission',
     description:
-      'Meet the team behind Gewinode Raven — founded in Sydney by engineers and market veterans. Our story, values and what makes our AI trading platform different.',
+      'Meet the team behind Gewinode Raven, founded in Sydney. Discover our story, values and what makes our AI trading platform different.',
     path: '/about-us',
+    keywords: [
+      'Gewinode Raven team',
+      'Gewinode Raven story',
+      'trading company Sydney',
+      'AI trading engineers',
+    ],
   });
 
   return (

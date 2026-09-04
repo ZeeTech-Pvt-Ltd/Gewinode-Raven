@@ -17,7 +17,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4>Company</h4>
+            <h2>Company</h2>
             <ul className="footer__links">
               {NAV_LINKS.filter((l) => l.to !== '/').map((l) => (
                 <li key={l.to}>
@@ -28,7 +28,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4>Legal</h4>
+            <h2>Legal</h2>
             <ul className="footer__links">
               {FOOTER.legal.map((l) => (
                 <li key={l.to}>
@@ -39,7 +39,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4>Contact</h4>
+            <h2>Contact</h2>
             <ul className="footer__contact">
               <li>
                 <Icon name="mail" size={16} />
