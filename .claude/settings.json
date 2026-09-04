@@ -1,0 +1,34 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:ravengewinode.com)",
+      "Bash(curl -sL --max-time 30 \"https://ravengewinode.com/\" -o /tmp/raven-ref.html)",
+      "Read(//tmp/**)",
+      "Bash(grep -oE 'https?://[^\"]*\\\\.css[^\"]*' /tmp/raven-ref.html | head -5; echo ---; grep -oiE '\\(font-family|--[a-z-]+:|#[0-9a-f]{3,6}\\)' /tmp/raven-ref.html | sort | uniq -c | sort -rn | head -40)",
+      "Bash(grep -oiE 'font-family:[^;\"]{3,80}|href=\"[^\"]*\\\\.css|src=\"[^\"]*\\\\.js' /tmp/raven-ref.html | sort | uniq -c | sort -rn | head -20; echo ---STYLES---; grep -c 'style=' /tmp/raven-ref.html)",
+      "Bash(npm install *)",
+      "Bash(node -e \"const p=require\\('./node_modules/intl-tel-input/package.json'\\); console.log\\('version:', p.version\\)\")",
+      "Bash(grep -oE 'attachUtils[^;]{0,160}' node_modules/intl-tel-input/build/js/intlTelInput.js)",
+      "Bash(grep -oE 'loadUtils[^;]{0,200}' node_modules/intl-tel-input/build/js/intlTelInput.js)",
+      "Bash(grep -oE 'attachUtils[^{;=]{0,140}' node_modules/intl-tel-input/dist/js/intlTelInput.js)",
+      "Bash(grep -oE 'loadUtils[^;]{0,180}' node_modules/intl-tel-input/dist/js/intlTelInput.js)",
+      "Bash(npm run *)",
+      "Bash(netstat -ano)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:5184/)",
+      "Bash(node \"C:/Users/samee/AppData/Local/Temp/verify-raven.mjs\")",
+      "Bash(node \"C:/Users/samee/AppData/Local/Temp/verify-au.mjs\")",
+      "Bash(sed -i 's/^          label={CAPABILITIES\\\\.label}$/          /' src/sections/Capabilities.jsx)",
+      "Bash(sed -i 's/^          label={DIFFERENTIATORS\\\\.label}$/          /' src/sections/Differentiators.jsx)",
+      "Bash(sed -i 's/^              label={INNOVATION\\\\.label}$/              /' src/sections/Innovation.jsx)",
+      "Bash(sed -i 's/^              label={PROMO\\\\.label}$/              /' src/sections/Promo.jsx)",
+      "Bash(sed -i 's/^            label={TESTIMONIALS\\\\.label}$/            /' src/sections/Testimonials.jsx)",
+      "Bash(node \"C:/Users/samee/AppData/Local/Temp/verify-cc2.mjs\")",
+      "Bash(node \"C:/Users/samee/AppData/Local/Temp/verify-cc3.mjs\")",
+      "Bash(node \"C:/Users/samee/AppData/Local/Temp/audit-resp.mjs\")",
+      "Bash(node \"C:/Users/samee/AppData/Local/Temp/debug-dd.mjs\")"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\samee\\AppData\\Local\\Temp"
+    ]
+  }
+}
