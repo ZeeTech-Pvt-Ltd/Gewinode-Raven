@@ -1459,6 +1459,13 @@ button {
   .nav {
     display: none;
   }
+  .grid--3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* orphan card (odd count) spans the full row instead of leaving a hole */
+  .grid--3 > :last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+  }
   .header__burger {
     display: flex;
   }
@@ -1507,6 +1514,9 @@ button {
   .caps,
   .stats__grid {
     grid-template-columns: 1fr;
+  }
+  .grid--3 > :last-child:nth-child(odd) {
+    grid-column: auto;
   }
   .form__row {
     grid-template-columns: 1fr;
