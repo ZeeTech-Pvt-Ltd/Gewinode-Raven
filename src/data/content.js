@@ -32,15 +32,6 @@ export const HERO = {
     'Fund from A$250 — the engine starts trading',
   ],
   trust: ['2FA & 256-bit SSL', '95% cold storage', '24/7 support'],
-  readout: {
-    title: 'live signal feed',
-    pairs: [
-      { k: 'BTC/AUD', v: '70,900', dir: 'up', change: '+1.4%' },
-      { k: 'ETH/AUD', v: '5,150', dir: 'up', change: '+0.8%' },
-      { k: 'ASX 200', v: '7,890', dir: 'up', change: '+0.3%' },
-      { k: 'XAU/AUD', v: '2,940', dir: 'down', change: '-0.4%' },
-    ],
-  },
 };
 
 export const TICKER = [
