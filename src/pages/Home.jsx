@@ -1,4 +1,5 @@
 import useMeta from '../hooks/useMeta.js';
+import BelowTheFold from '../components/BelowTheFold.jsx';
 import Hero from '../sections/Hero.jsx';
 import LiveTicker from '../sections/LiveTicker.jsx';
 import StatsBand from '../sections/StatsBand.jsx';
@@ -32,17 +33,26 @@ export default function Home() {
     <>
       <Hero />
       <LiveTicker />
-      <StatsBand />
-      <Features />
-      <Guarantees />
-      <Effortless />
-      <Differentiators />
-      <Innovation />
-      <Testimonials />
-      <Promo />
-      <FaqSection />
-      <Capabilities />
-      <FinalCta />
+      {/* Below the fold: batches mount on idle, staggered so no single long task */}
+      <BelowTheFold>
+        <StatsBand />
+        <Features />
+      </BelowTheFold>
+      <BelowTheFold delay={120}>
+        <Guarantees />
+        <Effortless />
+        <Differentiators />
+      </BelowTheFold>
+      <BelowTheFold delay={240}>
+        <Innovation />
+        <Testimonials />
+        <Promo />
+      </BelowTheFold>
+      <BelowTheFold delay={360}>
+        <FaqSection />
+        <Capabilities />
+        <FinalCta />
+      </BelowTheFold>
     </>
   );
 }

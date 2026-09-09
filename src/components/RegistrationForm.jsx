@@ -70,7 +70,8 @@ export default function RegistrationForm({
       input.removeEventListener('focus', onFocus);
     };
     input.addEventListener('focus', onFocus);
-    const timer = setTimeout(warm, 4000);
+    // Note: no idle warm-up — loading utils on idle cost ~3s of main-thread blocking
+    // (TBT) on mobile. Validators now load on first focus; submit waits ≤3s if needed.
 
     // Keep the phone label in sync with the selected country (flag + dial code).
     const onCountryChange = (e) => {
@@ -82,7 +83,6 @@ export default function RegistrationForm({
     return () => {
       input.removeEventListener('focus', onFocus);
       input.removeEventListener('countrychange', onCountryChange);
-      clearTimeout(timer);
       iti.destroy();
       itiRef.current = null;
       utilsDeferred.current = null;
