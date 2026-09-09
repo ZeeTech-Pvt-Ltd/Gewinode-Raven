@@ -29,10 +29,15 @@
       "Bash(node \"C:/Users/samee/AppData/Local/Temp/verify-seo.mjs\")",
       "Bash(node \"C:/Users/samee/AppData/Local/Temp/audit-seo.mjs\")",
       "Bash(node \"C:/Users/samee/AppData/Local/Temp/verify-headings.mjs\")",
-      "Bash(node \"C:/Users/samee/AppData/Local/Temp/verify-readout.mjs\")"
+      "Bash(node \"C:/Users/samee/AppData/Local/Temp/verify-readout.mjs\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" --max-time 3 http://localhost:5184/)",
+      "Bash(curl -s http://localhost:5184/)",
+      "Bash(curl -sI --max-time 20 \"https://gewinoderaven.com/\")",
+      "Bash(curl -sI --max-time 20 \"https://gewinoderaven.com/about-us\")"
     ],
     "additionalDirectories": [
-      "C:\\Users\\samee\\AppData\\Local\\Temp"
+      "C:\\Users\\samee\\AppData\\Local\\Temp",
+      "C:\\Users\\samee\\.claude\\projects\\c--Users-samee\\memory"
     ]
   }
 }
