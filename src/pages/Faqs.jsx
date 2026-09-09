@@ -27,7 +27,7 @@ export default function Faqs() {
         <div className="container">
           <h1 className="section-title">Frequently asked questions about Gewinode Raven</h1>
           <p className="section-lead">
-            Everything members ask us most about Gewinode Raven — answered plainly. Still unsure?
+            Everything members ask us most about Gewinode Raven - answered plainly. Still unsure?
             Contact us any time.
           </p>
         </div>

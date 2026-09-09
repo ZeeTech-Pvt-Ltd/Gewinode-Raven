@@ -32,7 +32,7 @@ export default function SignUp() {
               <span className="t--a" />
               <span className="t--g" />
             </span>
-            gewinode-raven — sign up
+            gewinode-raven - sign up
           </div>
           <div className="terminal__body">
             <RegistrationForm idPrefix="signup" />

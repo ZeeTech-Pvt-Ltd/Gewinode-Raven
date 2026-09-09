@@ -1,6 +1,6 @@
 import { Component, Fragment } from 'react';
 
-// Mounts below-the-fold sections on deterministic timers (NOT requestIdleCallback —
+// Mounts below-the-fold sections on deterministic timers (NOT requestIdleCallback -
 // rIC gets starved for many seconds under Lighthouse/PSI throttling, which wrecked
 // Speed Index). Short staggered delays keep initial layout off the critical path
 // while guaranteeing everything is in the DOM within ~1s.

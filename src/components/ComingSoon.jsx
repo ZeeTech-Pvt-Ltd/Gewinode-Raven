@@ -4,7 +4,7 @@ import useMeta from '../hooks/useMeta.js';
 export default function ComingSoon({ title }) {
   useMeta({
     title: `${title} | Gewinode Raven`,
-    description: `${title} — coming soon on the Gewinode Raven platform.`,
+    description: `${title} - coming soon on the Gewinode Raven platform.`,
     path: `/${title.toLowerCase().replace(/\s+/g, '-')}`,
   });
 

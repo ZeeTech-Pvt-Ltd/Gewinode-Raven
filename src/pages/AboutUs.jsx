@@ -85,7 +85,7 @@ export default function AboutUs() {
                     <span className="t--a" />
                     <span className="t--g" />
                   </span>
-                  about — gewinode raven
+                  about - gewinode raven
                 </div>
                 <div className="terminal__body">
                   <div className="readout__row" style={{ marginBottom: 10 }}>

@@ -26,7 +26,7 @@ export default function SignIn() {
               <span className="t--a" />
               <span className="t--g" />
             </span>
-            gewinode-raven — sign in
+            gewinode-raven - sign in
           </div>
           <div className="terminal__body">
             <RegistrationForm

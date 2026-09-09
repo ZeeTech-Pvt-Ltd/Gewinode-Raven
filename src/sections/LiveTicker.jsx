@@ -4,7 +4,7 @@ import { TICKER } from '../data/content.js';
 export default function LiveTicker() {
   const ref = useRef(null);
 
-  // Animate only while the ticker is actually on screen — saves continuous
+  // Animate only while the ticker is actually on screen - saves continuous
   // compositor work during page load and when scrolled away.
   useEffect(() => {
     const el = ref.current;

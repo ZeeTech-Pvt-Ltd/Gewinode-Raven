@@ -60,7 +60,7 @@ export default function Hero() {
                 <span className="t--a" />
                 <span className="t--g" />
               </span>
-              gewinode-raven — register
+              gewinode-raven - register
             </div>
             <div className="terminal__body">
               <RegistrationForm idPrefix="hero" />
