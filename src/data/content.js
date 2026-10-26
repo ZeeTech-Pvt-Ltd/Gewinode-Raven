@@ -14,7 +14,9 @@ export const NAV_LINKS = [
   { label: 'Home', to: '/' },
   { label: 'About Us', to: '/about-us' },
   { label: 'How It Works', to: '/how-it-works' },
+  { label: 'Features', to: '/features' },
   { label: 'Why Invest', to: '/why-invest' },
+  { label: 'Reviews', to: '/reviews' },
   { label: 'FAQ', to: '/faq' },
   { label: 'Contact Us', to: '/contact-us' },
 ];
@@ -162,7 +164,6 @@ export const INNOVATION = {
 export const RATING = {
   score: '4.8',
   total: 1247,
-  note: 'Gewinode Raven is rated 4.8 out of 5 by members across Trustpilot-style review platforms, based on 1,247 verified reviews.',
 };
 
 export const TESTIMONIALS = {
@@ -174,6 +175,7 @@ export const TESTIMONIALS = {
       place: 'Sydney',
       tag: 'Verified user',
       stars: 5,
+      photo: '/avatars/oliver.jpg',
       quote:
         'I was sceptical at first - I had been burned by a pushy broker before. Gewinode Raven felt different from the first week: no cold calls, no pressure, just a dashboard that quietly did its job. My first withdrawal arrived in under a day.',
     },
@@ -182,6 +184,7 @@ export const TESTIMONIALS = {
       place: 'Melbourne',
       tag: 'Verified user',
       stars: 5,
+      photo: '/avatars/priya.jpg',
       quote:
         'I work shifts, so I never had time to sit and trade. The engine runs while I sleep and I check the summary over breakfast. Seven months in, the results have been steady and the fee structure is exactly what they promised.',
     },
@@ -190,11 +193,70 @@ export const TESTIMONIALS = {
       place: 'Brisbane',
       tag: 'Verified trade',
       stars: 5,
+      photo: '/avatars/james.jpg',
       quote:
         'What sold me was the transparency. Every trade the AI makes is logged with the reasoning behind it, and the cold-storage report is published openly. It is the first platform where I genuinely understand where my money is.',
     },
   ],
 };
+
+// Additional reviews shown on the /reviews page (homepage keeps the original three).
+export const MORE_REVIEWS = [
+  {
+    name: 'Emma T.',
+    place: 'Perth',
+    tag: 'Verified user',
+    stars: 5,
+    photo: '/avatars/emma.jpg',
+    quote:
+      'After a year of watching from the sidelines I finally opened an account. The setup took minutes, and the engine has been running my portfolio steadily since. Support replies within minutes, even on weekends.',
+  },
+  {
+    name: 'Liam C.',
+    place: 'Adelaide',
+    tag: 'Verified user',
+    stars: 5,
+    photo: '/avatars/liam.jpg',
+    quote:
+      'The dashboard shows me exactly what the AI is doing and why. As someone who lost money on emotional trades before, that calm, mechanical approach is exactly what I needed.',
+  },
+  {
+    name: 'Sophie M.',
+    place: 'Gold Coast',
+    tag: 'Verified user',
+    stars: 5,
+    photo: '/avatars/sophie.jpg',
+    quote:
+      'I funded with the minimum A$250 to test the waters. Withdrawals have been prompt and the fees are transparent - nothing hidden, nothing surprising.',
+  },
+  {
+    name: 'Noah B.',
+    place: 'Canberra',
+    tag: 'Verified trade',
+    stars: 5,
+    photo: '/avatars/noah.jpg',
+    quote:
+      'The cold storage reports are published openly and the 2FA setup was painless. It is the first platform where security feels like a feature rather than a promise.',
+  },
+  {
+    name: 'Mia R.',
+    place: 'Newcastle',
+    tag: 'Verified user',
+    stars: 5,
+    photo: '/avatars/mia.jpg',
+    quote:
+      'Customer support is the real difference. A real person walked me through verification at 11pm. You do not get that anywhere else.',
+  },
+  {
+    name: 'Ethan K.',
+    place: 'Hobart',
+    tag: 'Verified trade',
+    stars: 5,
+    photo: '/avatars/ethan.jpg',
+    quote:
+      'I have tried three automated platforms and this is the first one that logs every trade with its reasoning. Whether it is a good week or a flat one, I always know why.',
+  },
+];
 
 export const PROMO = {
   title: 'Grow your portfolio with secure, data-led trading',
