@@ -1,0 +1,45 @@
+import RegistrationForm from '@/components/RegistrationForm';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+import { pageMeta } from '@/lib/seo';
+
+export const metadata = pageMeta({
+  title: 'Sign In | Access Your Gewinode Raven Account',
+  description:
+    'Sign in to your Gewinode Raven account to view your dashboard, live trades and portfolio performance.',
+  path: '/sign-in',
+  keywords: ['Gewinode Raven sign in', 'Gewinode Raven login', 'trading account login'],
+});
+
+export default function SignIn() {
+  return (
+    <section className="section section--deep">
+      <BreadcrumbSchema path="/sign-in" />
+      <div style={{ position: 'absolute', inset: 0, overflow: 'hidden', pointerEvents: 'none' }}>
+        <div className="page-hero__glow" />
+      </div>
+      <div className="container" style={{ maxWidth: 520 }}>
+        <h1 className="section-title" style={{ textAlign: 'center', fontSize: 28, marginBottom: 32 }}>
+          Sign in to Gewinode Raven
+        </h1>
+        <div className="terminal">
+          <div className="terminal__bar">
+            <span className="terminal__dots">
+              <span className="t--r" />
+              <span className="t--a" />
+              <span className="t--g" />
+            </span>
+            gewinode-raven - sign in
+          </div>
+          <div className="terminal__body">
+            <RegistrationForm
+              idPrefix="signin"
+              title="Welcome back"
+              subtitle="Confirm your details and we will restore your session securely."
+              buttonLabel="Sign In"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

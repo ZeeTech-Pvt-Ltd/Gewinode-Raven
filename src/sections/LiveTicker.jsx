@@ -1,5 +1,7 @@
+'use client';
+
 import { useEffect, useRef } from 'react';
-import { TICKER } from '../data/content.js';
+import { TICKER } from '@/data/content';
 
 export default function LiveTicker() {
   const ref = useRef(null);

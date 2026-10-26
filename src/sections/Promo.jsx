@@ -1,4 +1,4 @@
-import { Link } from 'react-router';
+import Link from 'next/link';
 import Icon from '../components/Icon.jsx';
 import Reveal from '../components/Reveal.jsx';
 import SectionHead from '../components/SectionHead.jsx';
@@ -27,7 +27,7 @@ export default function Promo() {
                 </li>
               ))}
             </ul>
-            <Link className="btn btn--ember" to={PROMO.cta.to} style={{ marginTop: 32 }}>
+            <Link className="btn btn--ember" href={PROMO.cta.to} style={{ marginTop: 32 }}>
               {PROMO.cta.label}
               <Icon name="arrow-right" size={17} />
             </Link>
@@ -68,7 +68,7 @@ export default function Promo() {
               />
               <circle cx="350" cy="120" r="5" fill="#fbbf24" />
               <rect x="338" y="66" width="76" height="28" rx="6" fill="#211c17" stroke="#39312a" />
-              <text x="352" y="85" fontFamily="'IBM Plex Mono', monospace" fontSize="12" fill="#4ade80">
+              <text x="352" y="85" style={{ fontFamily: 'var(--font-mono)' }} fontSize="12" fill="#4ade80">
                 +12.4%
               </text>
             </svg>

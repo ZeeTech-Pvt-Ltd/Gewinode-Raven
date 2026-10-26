@@ -1,16 +1,5 @@
-import useMeta from '../hooks/useMeta.js';
-
 // Template legal copy - needs lawyer review before launch.
-export default function LegalPage({ content, path }) {
-  useMeta({
-    title: content.seoTitle || `${content.title} | Gewinode Raven`,
-    description:
-      content.description ||
-      `${content.title} for the Gewinode Raven AI trading platform - Australian trading with AI precision.`,
-    path,
-    keywords: content.keywords || [],
-  });
-
+export default function LegalPage({ content }) {
   return (
     <div className="section section--surface">
       <div className="container">

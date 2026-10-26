@@ -1,5 +1,7 @@
+'use client';
+
 import { useState } from 'react';
-import { FAQS } from '../data/content.js';
+import { FAQS } from '@/data/content';
 
 export default function FaqList({ items = FAQS }) {
   const [openIndex, setOpenIndex] = useState(0);
