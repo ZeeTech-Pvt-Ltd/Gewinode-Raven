@@ -176,26 +176,26 @@ export const TRUST = {
   items: [
     {
       icon: 'lock',
-      title: 'Protected data',
-      text: 'Your personal information is guarded with industry-standard encryption, at rest and in transit.',
+      title: 'Encrypted end to end',
+      text: 'Your details travel and rest under industry-standard encryption, whether in motion or in storage.',
     },
     {
       icon: 'verified',
-      title: 'Account security',
-      text: 'Strong login protections help keep unauthorised users out of your account.',
+      title: 'Sign-in protection',
+      text: "Multiple sign-in safeguards keep your account out of anyone else's hands.",
     },
     {
       icon: 'eye',
-      title: 'Open terms',
-      text: 'Fees, policies and risk information are published in plain sight - never buried in fine print.',
+      title: 'Clear-cut terms',
+      text: 'Every fee, policy and risk warning is published out in the open - nothing tucked away where you cannot see it.',
     },
     {
       icon: 'sliders',
-      title: 'No auto-pilot surprises',
-      text: 'Nothing happens beyond the limits and settings you choose.',
+      title: 'You set every limit',
+      text: 'The platform only ever works inside the limits and settings you approve.',
     },
   ],
-  riskNote: "Trading carries risk, and no platform can guarantee profits. We'd rather say that clearly up front.",
+  riskNote: 'Trading always involves risk, and no platform can promise returns. We prefer to tell you that openly.',
   cta: { label: 'Get Started Securely', to: '/sign-up' },
 };
 

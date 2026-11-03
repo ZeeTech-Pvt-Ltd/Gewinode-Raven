@@ -5,7 +5,7 @@ import { PROBLEM } from '@/data/content';
 export default function Problem() {
   return (
     <section className="section section--deep">
-      <div className="container" style={{ maxWidth: 760, textAlign: 'center' }}>
+      <div className="container" style={{ maxWidth: 900, textAlign: 'center' }}>
         <SectionHead title={PROBLEM.title} />
         <Reveal>
           <p style={{ color: '#f5efe8', fontSize: 16.5, lineHeight: 1.8, marginBottom: 22 }}>
