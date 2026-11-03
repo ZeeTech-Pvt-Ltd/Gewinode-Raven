@@ -370,7 +370,7 @@ button {
   position: relative;
   background: var(--bg-deep);
   overflow: hidden;
-  padding: 96px 0 0;
+  padding: 56px 0 0;
 }
 
 /* radial-gradient glows — filter:blur() on large elements is very expensive on mobile */
@@ -402,7 +402,7 @@ button {
   grid-template-columns: 1.05fr 0.95fr;
   gap: 56px;
   align-items: center;
-  padding-bottom: 72px;
+  padding-bottom: 40px;
 }
 
 .hero__kicker {
@@ -1613,6 +1613,6 @@ button {
     display: none;
   }
   .hero {
-    padding-top: 64px;
+    padding-top: 48px;
   }
 }
