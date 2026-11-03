@@ -438,7 +438,7 @@ button {
 
 .hero__title {
   font-family: var(--font-display);
-  font-size: clamp(2.2rem, 4.6vw, 3.4rem);
+  font-size: 52px;
   font-weight: 800;
   line-height: 1.1;
   letter-spacing: -0.025em;
@@ -1587,6 +1587,9 @@ button {
   .hero__trust {
     flex-wrap: wrap;
     gap: 12px;
+  }
+  .hero__title {
+    font-size: 34px;
   }
   .highlights,
   .grid--3,
