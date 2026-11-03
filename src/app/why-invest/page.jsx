@@ -56,7 +56,7 @@ export default function WhyInvest() {
             >
               <Icon name="shield-check" size={28} style={{ color: '#f97316', marginBottom: 12 }} />
               <h3 style={{ fontFamily: 'var(--font-display)', marginBottom: 10 }}>A note on risk</h3>
-              <p style={{ color: '#a89e92', fontSize: 14.5 }}>{WHY.riskNote}</p>
+              <p style={{ color: '#f5efe8', fontSize: 14.5 }}>{WHY.riskNote}</p>
             </div>
             <Link className="btn btn--ember" href={WHY.cta.to}>
               {WHY.cta.label}

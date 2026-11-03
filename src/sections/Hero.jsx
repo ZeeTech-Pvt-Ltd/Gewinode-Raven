@@ -1,7 +1,7 @@
 import Link from 'next/link';
-import Icon from '../components/Icon.jsx';
-import RegistrationForm from '../components/RegistrationForm.jsx';
-import { HERO } from '../data/content.js';
+import Icon from '@/components/Icon';
+import RegistrationForm from '@/components/RegistrationForm';
+import { HERO } from '@/data/content';
 
 export default function Hero() {
   return (
@@ -12,14 +12,10 @@ export default function Hero() {
       <div className="container">
         <div className="hero__inner">
           <div className="hero__copy">
-            <span className="hero__kicker">
-              <span className="pulse" />
-              {HERO.kicker}
-            </span>
-
             <h1 className="hero__title">
-              <span className="ember">Gewinode Raven</span> puts AI-powered precision behind
-              every trade
+              {HERO.titleLines[0]}
+              <br />
+              {HERO.titleLines[1]}
             </h1>
 
             <p className="hero__sub">{HERO.sub}</p>
@@ -29,25 +25,13 @@ export default function Hero() {
                 {HERO.ctaPrimary.label}
                 <Icon name="arrow-right" size={17} />
               </Link>
-              <Link className="btn btn--ghost" href={HERO.ctaSecondary.to}>
-                {HERO.ctaSecondary.label}
-              </Link>
             </div>
 
-            <div className="hero__steps">
-              {HERO.steps.map((s, i) => (
-                <span key={s}>
-                  {i > 0 && <span className="hero__steps-sep">→</span>}
-                  {s}
-                </span>
-              ))}
-            </div>
-
-            <div className="hero__trust">
-              {HERO.trust.map((t) => (
-                <span key={t}>
-                  <Icon name="check" size={15} />
-                  {t}
+            <div className="hero__trust" style={{ marginTop: 24 }}>
+              {HERO.microcopy.map((m) => (
+                <span key={m.text}>
+                  <Icon name={m.icon} size={15} />
+                  {m.text}
                 </span>
               ))}
             </div>

@@ -1,51 +1,47 @@
 import Hero from '@/sections/Hero';
 import LiveTicker from '@/sections/LiveTicker';
-import StatsBand from '@/sections/StatsBand';
+import Highlights from '@/sections/Highlights';
+import Problem from '@/sections/Problem';
+import Platform from '@/sections/Platform';
+import GetStarted from '@/sections/GetStarted';
+import Markets from '@/sections/Markets';
 import Features from '@/sections/Features';
-import Guarantees from '@/sections/Guarantees';
-import Effortless from '@/sections/Effortless';
-import Differentiators from '@/sections/Differentiators';
-import Innovation from '@/sections/Innovation';
+import Audiences from '@/sections/Audiences';
+import Trust from '@/sections/Trust';
 import Testimonials from '@/sections/Testimonials';
-import Promo from '@/sections/Promo';
 import FaqSection from '@/sections/FaqSection';
-import Capabilities from '@/sections/Capabilities';
-import FinalCta from '@/sections/FinalCta';
 import { pageMeta } from '@/lib/seo';
 
 export const metadata = pageMeta({
-  title: 'Gewinode Raven: AI-Powered Trading Platform for Australia',
+  title: 'Gewinode Raven | AI Market Insights & Smarter Trading',
   description:
-    "Gewinode Raven is Australia's AI-powered trading platform. Automated trading at 85% accuracy, 95% cold storage and 24/7 support.",
+    'Gewinode Raven is an AI trading platform for crypto, forex, stocks and commodities. Get clear, actionable insights - you stay in charge of every trade.',
   path: '/',
   keywords: [
-    'automated trading Australia',
-    'AI trading Australia',
-    'secure trading platform',
-    'cold storage trading',
-    'trading engine 85% accuracy',
+    'AI market insights',
+    'market analysis platform',
+    'crypto forex stocks insights',
+    'trading signals Australia',
   ],
 });
 
-// Static sections render fully on the server (no client JS, no BelowTheFold
-// mount trick needed - that was an SPA-only optimisation). Interactivity is
+// Static sections render fully on the server (no client JS). Interactivity is
 // limited to the form, ticker, FAQ accordion and scroll reveals.
 export default function Home() {
   return (
     <>
       <Hero />
       <LiveTicker />
-      <StatsBand />
+      <Highlights />
+      <Problem />
+      <Platform />
+      <GetStarted />
+      <Markets />
       <Features />
-      <Guarantees />
-      <Effortless />
-      <Differentiators />
-      <Innovation />
+      <Audiences />
+      <Trust />
       <Testimonials />
-      <Promo />
       <FaqSection />
-      <Capabilities />
-      <FinalCta />
     </>
   );
 }

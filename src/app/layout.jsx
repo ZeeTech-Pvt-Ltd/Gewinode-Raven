@@ -28,21 +28,20 @@ const plexMono = IBM_Plex_Mono({
 export const metadata = {
   metadataBase: new URL(SITE.url),
   title: {
-    default: 'Gewinode Raven: AI-Powered Trading Platform for Australia',
+    default: 'Gewinode Raven | AI Market Insights & Smarter Trading',
     template: '%s',
   },
   description:
-    "Gewinode Raven is Australia's AI-powered trading platform. Automated trading at 85% accuracy, 95% cold storage and 24/7 support.",
+    'Gewinode Raven is an AI trading platform for crypto, forex, stocks and commodities. Get clear, actionable insights - you stay in charge of every trade.',
   keywords: [
     'Gewinode Raven',
     'AI trading platform',
-    'automated trading',
-    'AI trading engine',
+    'AI market insights',
+    'market analysis platform',
     'trading platform Australia',
-    'automated trading Australia',
     'AI trading Australia',
+    'crypto forex stocks insights',
     'secure trading platform',
-    'cold storage trading',
   ],
   openGraph: {
     siteName: SITE.name,
@@ -65,7 +64,7 @@ const ORG_SCHEMA = {
   url: SITE.url,
   logo: `${SITE.url}favicon.svg`,
   description:
-    "Gewinode Raven is Australia's AI-powered trading platform. Automated trading at 85% accuracy, 95% cold storage and zero hidden fees.",
+    'Gewinode Raven is an AI trading platform that tracks crypto, forex, stocks and commodities around the clock and delivers clear, actionable insights.',
 };
 
 const WEBSITE_SCHEMA = {

@@ -36,7 +36,7 @@ export default function AboutUs() {
           <div style={{ maxWidth: 760, margin: '0 auto' }}>
             {ABOUT.story.map((p, i) => (
               <Reveal key={i}>
-                <p style={{ color: '#a89e92', fontSize: 16.5, lineHeight: 1.8, marginBottom: 22 }}>
+                <p style={{ color: '#f5efe8', fontSize: 16.5, lineHeight: 1.8, marginBottom: 22 }}>
                   {p}
                 </p>
               </Reveal>

@@ -5,8 +5,8 @@ import { SITE } from '@/data/content';
 export const BASE_KEYWORDS = [
   'Gewinode Raven',
   'AI trading platform',
-  'automated trading',
-  'AI trading engine',
+  'AI market insights',
+  'market analysis platform',
   'trading platform Australia',
 ];
 

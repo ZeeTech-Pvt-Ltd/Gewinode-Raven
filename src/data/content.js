@@ -22,18 +22,14 @@ export const NAV_LINKS = [
 ];
 
 export const HERO = {
-  kicker: 'Live · Engine online · AU verified',
-  titleLines: ['Gewinode Raven puts', 'AI-powered precision behind every trade'],
-  // Rendered as: Gewinode Raven (ember gradient) puts AI-powered precision behind every trade
-  sub: 'The intelligent trading platform for verified residents of Australia. Our AI engine reads the market around the clock, so you can trade with confidence - without staring at charts all day.',
-  ctaPrimary: { label: 'Register Now', to: '/sign-up' },
-  ctaSecondary: { label: 'See how it works', to: '/how-it-works' },
-  steps: [
-    'Register in 2 minutes',
-    'Verify as an Australian resident',
-    'Fund from A$250 - the engine starts trading',
+  titleLines: ['Markets Move All Day.', 'Let AI Keep Watch.'],
+  sub: 'Gewinode Raven is an AI trading platform that watches crypto, forex, stocks and commodities around the clock. It turns the noise of live markets into clear, actionable insights - while every trade stays firmly in your hands.',
+  ctaPrimary: { label: 'Start Trading Smarter', to: '/sign-up' },
+  microcopy: [
+    { icon: 'card', text: 'No credit card to register' },
+    { icon: 'clock', text: 'Set up in minutes' },
+    { icon: 'lock', text: 'Your data stays private' },
   ],
-  trust: ['2FA & 256-bit SSL', '95% cold storage', '24/7 support'],
 };
 
 export const TICKER = [
@@ -46,6 +42,162 @@ export const TICKER = [
   { k: 'DAX', v: '19,126', dir: 'up', change: '+0.4%' },
   { k: 'XAG/AUD', v: '41.08', dir: 'up', change: '+1.1%' },
 ];
+
+export const HIGHLIGHTS = [
+  { title: '4 markets, 1 dashboard', text: 'Crypto, forex, stocks and commodities - all in one clean workspace.' },
+  { title: 'Insights, not noise', text: 'Every signal arrives with a plain-language reason, not a chart you have to decode.' },
+  { title: 'Runs in your browser', text: "Nothing to install - sign in from any device and you're ready." },
+  { title: 'Your rules', text: 'You choose the markets, the limits and the risk settings, always.' },
+];
+
+export const PROBLEM = {
+  title: "Great Opportunities Don't Wait for Your Schedule",
+  lead: 'Markets move while you sleep, work or commute. A setup that looks perfect at midnight can be gone by the time you open your laptop in the morning. Following a single market properly takes hours of screen time - following four is a full-time job. Most people end up reacting late, trading on emotion, or missing the move entirely.',
+  resolution: 'Gewinode Raven was built to change that. The platform does the watching and the analysing, so you can spend your time on the only part that truly needs you: deciding.',
+};
+
+export const PLATFORM = {
+  title: 'Your Always-On Market Analyst',
+  lead: 'Think of Gewinode Raven as an analyst that never clocks off. It studies price action, trends and volume across four major markets, continuously. When it spots a setup that fits its models, it prepares an insight for you: what it noticed, why it matters and what could happen next.',
+  close: 'You are the trader, not the AI. Review the insight, adjust it to fit your plan, or pass on it altogether. Gewinode Raven informs - you decide.',
+};
+
+export const GET_STARTED = {
+  title: 'From Sign-Up to First Insight in 4 Steps',
+  steps: [
+    {
+      icon: 'user',
+      step: '01',
+      title: 'Register',
+      text: 'Share a few basic details to create your profile - it takes about two minutes.',
+    },
+    {
+      icon: 'shield-check',
+      step: '02',
+      title: 'Verify',
+      text: 'Confirm your identity so your account and funds stay protected.',
+    },
+    {
+      icon: 'card',
+      step: '03',
+      title: 'Add funds',
+      text: 'Deposit using any supported payment method and set your starting balance.',
+    },
+    {
+      icon: 'chart',
+      step: '04',
+      title: 'Explore insights',
+      text: 'Pick your markets, set your risk preferences and start reviewing AI-generated ideas.',
+    },
+  ],
+  cta: { label: 'Create My Account', to: '/sign-up' },
+};
+
+export const MARKETS = {
+  title: 'Trade Across Four Major Markets',
+  items: [
+    {
+      icon: 'bolt',
+      title: 'Crypto',
+      text: 'Follow the digital assets that move fastest, with insights tuned to volatile, around-the-clock price action.',
+    },
+    {
+      icon: 'globe',
+      title: 'Forex',
+      text: "Track the world's major currency pairs and see how rates, policy shifts and global events move exchange rates.",
+    },
+    {
+      icon: 'chart',
+      title: 'Stocks',
+      text: 'Watch the companies everyone talks about and catch early changes in momentum and volume.',
+    },
+    {
+      icon: 'coins',
+      title: 'Commodities',
+      text: 'Cover metals, energy and the essentials that respond to supply, demand and world developments.',
+    },
+  ],
+};
+
+export const PLATFORM_FEATURES = {
+  title: 'Built to Support Confident Decisions',
+  items: [
+    {
+      icon: 'eye',
+      title: 'Insights with reasons',
+      text: 'Every suggestion comes with the thinking behind it, so each trade is also a lesson.',
+    },
+    {
+      icon: 'shield-check',
+      title: 'Built-in risk tools',
+      text: 'Set stop-loss and take-profit levels before entering a position - and the platform respects them.',
+    },
+    {
+      icon: 'zap',
+      title: 'Smart alerts',
+      text: 'Get a heads-up the moment a market you follow makes a move worth your attention.',
+    },
+    {
+      icon: 'invest',
+      title: 'One clean dashboard',
+      text: 'Balance, open positions and performance in a single view, free of clutter.',
+    },
+    {
+      icon: 'devices',
+      title: 'Any screen, anywhere',
+      text: 'The full platform works smoothly on desktop, tablet and mobile browsers.',
+    },
+  ],
+};
+
+export const AUDIENCES = {
+  title: "Whether You're Starting Out or Scaling Up",
+  items: [
+    {
+      icon: 'user',
+      title: 'Beginners',
+      text: 'No jargon, no overwhelm. Plain explanations help you understand what you are looking at before you act.',
+    },
+    {
+      icon: 'clock',
+      title: 'Busy professionals',
+      text: 'Short on time? Review your insights over coffee - minutes instead of hours.',
+    },
+    {
+      icon: 'speed',
+      title: 'Active traders',
+      text: 'Layer AI analysis over your existing strategy and cover more markets with less effort.',
+    },
+  ],
+};
+
+export const TRUST = {
+  title: 'Your Trust Comes First',
+  items: [
+    {
+      icon: 'lock',
+      title: 'Protected data',
+      text: 'Your personal information is guarded with industry-standard encryption, at rest and in transit.',
+    },
+    {
+      icon: 'verified',
+      title: 'Account security',
+      text: 'Strong login protections help keep unauthorised users out of your account.',
+    },
+    {
+      icon: 'eye',
+      title: 'Open terms',
+      text: 'Fees, policies and risk information are published in plain sight - never buried in fine print.',
+    },
+    {
+      icon: 'sliders',
+      title: 'No auto-pilot surprises',
+      text: 'Nothing happens beyond the limits and settings you choose.',
+    },
+  ],
+  riskNote: "Trading carries risk, and no platform can guarantee profits. We'd rather say that clearly up front.",
+  cta: { label: 'Get Started Securely', to: '/sign-up' },
+};
 
 export const STATS = [
   { value: '3.5M+', label: 'Registered members' },
@@ -272,28 +424,36 @@ export const PROMO = {
 
 export const FAQS = [
   {
-    q: 'Is Gewinode Raven legitimate?',
-    a: 'Yes. Gewinode Raven operates as a technology services company serving verified residents of Australia, with a fully automated AI trading engine. We maintain transparent reporting, published reserve audits and a dedicated support team reachable at support@gewinoderaven.com. As with any trading, results are not guaranteed and capital is at risk.',
+    q: 'What is an AI trading platform?',
+    a: "It's a platform where artificial intelligence analyses market data - price movements, trends and volume - and surfaces trade ideas for you. The goal is simple: better decisions, reached faster, with less guesswork.",
   },
   {
-    q: 'What is the minimum deposit?',
-    a: 'The minimum deposit to activate your Gewinode Raven account is A$250. There are no deposit fees, and you can fund your account using major credit cards, bank transfer or PayPal. Your funds are applied to your trading balance as soon as the transfer clears.',
+    q: 'Does the AI trade for me?',
+    a: 'No. Gewinode Raven provides insights, not orders. The AI shows you what it sees and why it matters; you decide whether, when and how to act. Your account never trades without your input.',
   },
   {
-    q: 'How safe is my money?',
-    a: '95% of customer funds are held in cold storage - offline wallets that cannot be reached by online attackers. Your account is additionally protected by two-factor authentication and 256-bit SSL encryption, and our reserves are audited on a live, published basis.',
+    q: 'Do I need experience?',
+    a: 'No. Every insight arrives with a plain-English explanation, and our support team is there to help you get oriented. If you can read a summary, you can use Gewinode Raven.',
+  },
+  {
+    q: 'Which markets can I access?',
+    a: 'Crypto, forex, stocks and commodities - all from a single account and one dashboard.',
+  },
+  {
+    q: 'Do I need to download anything?',
+    a: 'No. Gewinode Raven runs entirely in your web browser, on desktop, tablet or mobile. Sign in and you are ready.',
+  },
+  {
+    q: 'How much do I need to start?',
+    a: 'Your minimum deposit is A$250, with no deposit fees.',
   },
   {
     q: 'How do withdrawals work?',
-    a: 'Withdrawals are requested from your dashboard with a single click. Most requests are processed within 24 hours and can be sent to the payment method you funded your account with - credit card, bank transfer or PayPal.',
+    a: 'Request a withdrawal from your dashboard and most requests are processed within 24 hours, back to your original payment method.',
   },
   {
-    q: 'Is Gewinode Raven regulated?',
-    a: 'Gewinode Raven operates under strict financial regulations and data privacy standards and complies with all applicable Australian requirements for technology service providers. Please note that we do not offer financial, investment or legal advice - the AI engine executes trades based on your chosen settings, and you remain responsible for your account.',
-  },
-  {
-    q: 'How do I avoid imitation sites?',
-    a: 'The only official domain for Gewinode Raven is gewinoderaven.com. We never contact you by phone or instant message asking for your password or for deposits to a personal account. If you receive a suspicious link claiming to be us, do not click it - report it to our support team instead.',
+    q: 'Is my money at risk?',
+    a: "Yes. All trading involves risk, and you could lose some or all of your capital. Never trade with money you can't afford to lose.",
   },
 ];
 
@@ -353,7 +513,7 @@ export const FINAL_CTA = {
 
 export const FOOTER = {
   blurb:
-    'Gewinode Raven is an AI-powered trading platform for verified residents of Australia. Smart algorithms, 95% cold storage and zero hidden fees.',
+    'Gewinode Raven is an AI trading platform that watches crypto, forex, stocks and commodities around the clock and delivers clear, actionable insights. You stay in charge of every trade.',
   disclaimer:
     'Trading foreign exchange, crypto and CFDs carries a high level of risk and may not be suitable for all investors. The value of investments can go down as well as up, and you may lose some or all of your capital. Past performance and accuracy claims are not indicative of future results. Gewinode Raven operates as a technology services company and does not offer financial, investment or legal advice. You should carefully consider your objectives and, if necessary, consult an independent financial adviser before investing. Registration is limited to verified residents of Australia.',
   legal: [

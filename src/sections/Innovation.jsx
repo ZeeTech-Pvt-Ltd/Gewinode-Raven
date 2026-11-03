@@ -20,7 +20,7 @@ export default function Innovation() {
               {INNOVATION.points.map((p) => (
                 <li
                   key={p}
-                  style={{ display: 'flex', gap: 12, alignItems: 'flex-start', color: '#a89e92' }}
+                  style={{ display: 'flex', gap: 12, alignItems: 'flex-start', color: '#f5efe8' }}
                 >
                   <Icon name="check" size={18} style={{ color: '#f97316', flexShrink: 0, marginTop: 3 }} />
                   {p}
