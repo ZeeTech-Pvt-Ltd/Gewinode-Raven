@@ -23,7 +23,7 @@ export const NAV_LINKS = [
 
 export const HERO = {
   titleLines: ['Markets Move All Day.', 'Let AI Keep Watch.'],
-  sub: 'Gewinode Raven is an AI trading platform that watches crypto, forex, stocks and commodities around the clock. It turns the noise of live markets into clear, actionable insights - while every trade stays firmly in your hands.',
+  sub: 'Gewinode Raven watches crypto, forex, stocks and commodities day and night, turning live market movement into simple, practical insights - and the final call is always yours.',
   ctaPrimary: { label: 'Start Trading Smarter', to: '/sign-up' },
   microcopy: [
     { icon: 'card', text: 'No credit card to register' },
@@ -44,22 +44,22 @@ export const TICKER = [
 ];
 
 export const HIGHLIGHTS = [
-  { title: '4 markets, 1 dashboard', text: 'Crypto, forex, stocks and commodities - all in one clean workspace.' },
-  { title: 'Insights, not noise', text: 'Every signal arrives with a plain-language reason, not a chart you have to decode.' },
-  { title: 'Runs in your browser', text: "Nothing to install - sign in from any device and you're ready." },
-  { title: 'Your rules', text: 'You choose the markets, the limits and the risk settings, always.' },
+  { title: 'Four markets, one view', text: 'Crypto, forex, stocks and commodities - all in a single clean workspace.' },
+  { title: 'Clarity over noise', text: 'Every signal arrives with a plain-language reason, not a chart you have to decode.' },
+  { title: 'No downloads needed', text: 'The platform lives in your browser - sign in from any device and you are ready.' },
+  { title: 'Limits you control', text: 'You choose the markets, the boundaries and the risk settings, always.' },
 ];
 
 export const PROBLEM = {
   title: "Great Opportunities Don't Wait for Your Schedule",
   lead: 'Markets move while you sleep, work or commute. A setup that looks perfect at midnight can be gone by the time you open your laptop in the morning. Following a single market properly takes hours of screen time - following four is a full-time job. Most people end up reacting late, trading on emotion, or missing the move entirely.',
-  resolution: 'Gewinode Raven was built to change that. The platform does the watching and the analysing, so you can spend your time on the only part that truly needs you: deciding.',
+  resolution: 'That is the problem Gewinode Raven solves. The platform takes on the watching and the analysis, so the only thing left on your plate is the decision.',
 };
 
 export const PLATFORM = {
   title: 'Your Always-On Market Analyst',
-  lead: 'Think of Gewinode Raven as an analyst that never clocks off. It studies price action, trends and volume across four major markets, continuously. When it spots a setup that fits its models, it prepares an insight for you: what it noticed, why it matters and what could happen next.',
-  close: 'You are the trader, not the AI. Review the insight, adjust it to fit your plan, or pass on it altogether. Gewinode Raven informs - you decide.',
+  lead: 'Picture an analyst who works without breaks. Gewinode Raven studies price action, trends and volume across four major markets all day and all night, and whenever a setup matches its models, it hands you a short briefing: what it spotted, why it stands out and where it might go.',
+  close: 'From there, the decision is entirely yours. Take the idea as it is, tweak the levels to suit your plan, or skip it altogether. The AI suggests - you steer.',
 };
 
 export const GET_STARTED = {
@@ -68,25 +68,25 @@ export const GET_STARTED = {
     {
       icon: 'user',
       step: '01',
-      title: 'Register',
+      title: 'Start your account',
       text: 'Share a few basic details to create your profile - it takes about two minutes.',
     },
     {
       icon: 'shield-check',
       step: '02',
-      title: 'Verify',
-      text: 'Confirm your identity so your account and funds stay protected.',
+      title: 'Confirm your identity',
+      text: 'A quick identity check keeps your account and your funds protected.',
     },
     {
       icon: 'card',
       step: '03',
-      title: 'Add funds',
-      text: 'Deposit using any supported payment method and set your starting balance.',
+      title: 'Fund your balance',
+      text: 'Deposit using any supported payment method and set your starting amount.',
     },
     {
       icon: 'chart',
       step: '04',
-      title: 'Explore insights',
+      title: 'Review your insights',
       text: 'Pick your markets, set your risk preferences and start reviewing AI-generated ideas.',
     },
   ],
@@ -124,28 +124,28 @@ export const PLATFORM_FEATURES = {
   items: [
     {
       icon: 'eye',
-      title: 'Insights with reasons',
+      title: 'Every signal explained',
       text: 'Every suggestion comes with the thinking behind it, so each trade is also a lesson.',
     },
     {
       icon: 'shield-check',
-      title: 'Built-in risk tools',
+      title: 'Risk controls built in',
       text: 'Set stop-loss and take-profit levels before entering a position - and the platform respects them.',
     },
     {
       icon: 'zap',
-      title: 'Smart alerts',
+      title: 'Alerts that matter',
       text: 'Get a heads-up the moment a market you follow makes a move worth your attention.',
     },
     {
       icon: 'invest',
-      title: 'One clean dashboard',
+      title: 'A single clear dashboard',
       text: 'Balance, open positions and performance in a single view, free of clutter.',
     },
     {
       icon: 'devices',
-      title: 'Any screen, anywhere',
-      text: 'The full platform works smoothly on desktop, tablet and mobile browsers.',
+      title: 'Works on any device',
+      text: 'The full platform runs smoothly on desktop, tablet and mobile browsers.',
     },
   ],
 };
@@ -155,17 +155,17 @@ export const AUDIENCES = {
   items: [
     {
       icon: 'user',
-      title: 'Beginners',
+      title: 'Just starting out',
       text: 'No jargon, no overwhelm. Plain explanations help you understand what you are looking at before you act.',
     },
     {
       icon: 'clock',
-      title: 'Busy professionals',
-      text: 'Short on time? Review your insights over coffee - minutes instead of hours.',
+      title: 'Short on time',
+      text: 'Review your insights over coffee - minutes instead of hours.',
     },
     {
       icon: 'speed',
-      title: 'Active traders',
+      title: 'Already trading',
       text: 'Layer AI analysis over your existing strategy and cover more markets with less effort.',
     },
   ],
