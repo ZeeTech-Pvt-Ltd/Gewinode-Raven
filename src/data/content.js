@@ -6,9 +6,6 @@ export const SITE = {
   url: 'https://gewinoderaven.com/',
   email: 'support@gewinoderaven.com',
   offerName: 'GewinodeRaven-Site',
-  formEndpoint: 'https://theunion-ai.com/dorovio-au.php',
-  // Flip to true to resume accepting form submissions site-wide.
-  formEnabled: false,
   tagline: 'AI-powered trading, engineered for Australia',
 };
 

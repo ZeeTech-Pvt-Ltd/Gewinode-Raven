@@ -2,10 +2,8 @@
 
 import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
 import intlTelInput from 'intl-tel-input';
 import 'intl-tel-input/dist/css/intlTelInput.min.css';
-import { SITE } from '@/data/content';
 
 // Full-size validator package (~300KB) is attached lazily; the input renders instantly
 // with flag + dial code, and the validators arrive on first focus or after 4s idle.
@@ -18,25 +16,17 @@ export default function RegistrationForm({
   buttonLabel = 'Register Now',
   showConsent = true,
 }) {
-  const router = useRouter();
   const phoneRef = useRef(null);
   const itiRef = useRef(null);
   const utilsDeferred = useRef(null);
-  const loadTimeRef = useRef(Date.now());
   const [errors, setErrors] = useState({});
   const [formError, setFormError] = useState('');
-  const [success, setSuccess] = useState('');
-  const [submitting, setSubmitting] = useState(false);
   const [agreed, setAgreed] = useState(true);
   const [phoneCountry, setPhoneCountry] = useState(null);
-  // Set by JS on mount - submissions without it were made by non-JS bots.
-  const [jsToken, setJsToken] = useState('');
 
   const fid = (name) => `${idPrefix}-${name}`;
 
   useEffect(() => {
-    setJsToken('human');
-
     const input = phoneRef.current;
     if (!input || itiRef.current) return;
 
@@ -97,101 +87,16 @@ export default function RegistrationForm({
     };
   }, []);
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     setFormError('');
-    setSuccess('');
-
-    // Site-wide kill switch - no request leaves the browser while disabled.
-    if (!SITE.formEnabled) {
-      setFormError('Registrations are temporarily paused. Please check back soon.');
-      return;
-    }
 
     const data = Object.fromEntries(new FormData(e.target).entries());
-    const errs = {};
-
-    if (!data.firstName.trim()) errs.firstName = 'First name is required';
-    if (!data.lastName.trim()) errs.lastName = 'Last name is required';
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(data.email.trim())) {
-      errs.email = 'Enter a valid email address';
-    }
-
     // Honeypot - bots fill it, humans never see it.
     if (data.website) return;
 
-    // Anti-bot guards: JS token present, and a human needs more than 3s
-    // to fill five fields. Silently drop anything faster.
-    if (!data.js_token) return;
-    if (Date.now() - loadTimeRef.current < 3000) return;
-
-    // Phone: full validation once utils are loaded; raw sanity check otherwise.
-    let phone = data.phone.trim();
-    const iti = itiRef.current;
-    if (iti) {
-      let valid = false;
-      try {
-        valid = iti.isValidNumber();
-      } catch {
-        // v29's ensureUtils throws until utils are attached - wait briefly, then retry.
-        await Promise.race([
-          utilsDeferred.current || Promise.resolve(),
-          new Promise((r) => setTimeout(r, 3000)),
-        ]);
-        try {
-          valid = iti.isValidNumber();
-        } catch {
-          valid = false;
-        }
-      }
-      if (valid) {
-        phone = iti.getNumber();
-      } else if (phone.replace(/\D/g, '').length < 7) {
-        errs.phone = 'Enter a valid phone number';
-      }
-    } else if (phone.replace(/\D/g, '').length < 7) {
-      errs.phone = 'Enter a valid phone number';
-    }
-
-    if (showConsent && !agreed) {
-      errs.consent = 'Please accept to continue';
-    }
-
-    if (Object.keys(errs).length) {
-      setErrors(errs);
-      return;
-    }
-    setErrors({});
-
-    setSubmitting(true);
-    try {
-      const res = await fetch(SITE.formEndpoint, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          offerName: SITE.offerName,
-          firstName: data.firstName.trim(),
-          lastName: data.lastName.trim(),
-          email: data.email.trim(),
-          phone,
-        }),
-      });
-      if (!res.ok) {
-        // The endpoint rate-limits 3 attempts per 5 minutes per IP.
-        const msg = await res.text().catch(() => '');
-        throw new Error(
-          res.status === 429 || /limit|many|attempt/i.test(msg)
-            ? 'Too many attempts - please wait a few minutes and try again.'
-            : 'Something went wrong on our side. Please try again in a moment.'
-        );
-      }
-      setSuccess('Account request received - redirecting…');
-      setTimeout(() => router.push('/thank-you'), 600);
-    } catch (err) {
-      setFormError(err.message || 'Something went wrong. Please try again.');
-    } finally {
-      setSubmitting(false);
-    }
+    // No submission endpoint is configured - no request ever leaves the browser.
+    setFormError('Registrations are temporarily paused. Please check back soon.');
   };
 
   return (
@@ -204,16 +109,9 @@ export default function RegistrationForm({
           {formError}
         </div>
       )}
-      {success && (
-        <div className="form__success" role="status">
-          {success}
-        </div>
-      )}
 
       {/* Honeypot field - hidden from humans */}
       <input className="form__honey" type="text" name="website" tabIndex={-1} autoComplete="off" />
-      {/* JS presence token - only set by React on mount */}
-      <input type="hidden" name="js_token" value={jsToken} />
 
       <div className="form__row">
         <div className="field">
@@ -294,8 +192,8 @@ export default function RegistrationForm({
         </div>
       )}
 
-      <button className="btn btn--ember" type="submit" disabled={submitting}>
-        {submitting ? 'Submitting…' : buttonLabel}
+      <button className="btn btn--ember" type="submit">
+        {buttonLabel}
       </button>
 
       <p className="form__note">Protected by 2FA and 256-bit SSL encryption</p>
