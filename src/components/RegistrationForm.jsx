@@ -22,16 +22,21 @@ export default function RegistrationForm({
   const phoneRef = useRef(null);
   const itiRef = useRef(null);
   const utilsDeferred = useRef(null);
+  const loadTimeRef = useRef(Date.now());
   const [errors, setErrors] = useState({});
   const [formError, setFormError] = useState('');
   const [success, setSuccess] = useState('');
   const [submitting, setSubmitting] = useState(false);
   const [agreed, setAgreed] = useState(true);
   const [phoneCountry, setPhoneCountry] = useState(null);
+  // Set by JS on mount - submissions without it were made by non-JS bots.
+  const [jsToken, setJsToken] = useState('');
 
   const fid = (name) => `${idPrefix}-${name}`;
 
   useEffect(() => {
+    setJsToken('human');
+
     const input = phoneRef.current;
     if (!input || itiRef.current) return;
 
@@ -108,6 +113,11 @@ export default function RegistrationForm({
 
     // Honeypot - bots fill it, humans never see it.
     if (data.website) return;
+
+    // Anti-bot guards: JS token present, and a human needs more than 3s
+    // to fill five fields. Silently drop anything faster.
+    if (!data.js_token) return;
+    if (Date.now() - loadTimeRef.current < 3000) return;
 
     // Phone: full validation once utils are loaded; raw sanity check otherwise.
     let phone = data.phone.trim();
@@ -196,6 +206,8 @@ export default function RegistrationForm({
 
       {/* Honeypot field - hidden from humans */}
       <input className="form__honey" type="text" name="website" tabIndex={-1} autoComplete="off" />
+      {/* JS presence token - only set by React on mount */}
+      <input type="hidden" name="js_token" value={jsToken} />
 
       <div className="form__row">
         <div className="field">

@@ -6,7 +6,7 @@ export const SITE = {
   url: 'https://gewinoderaven.com/',
   email: 'support@gewinoderaven.com',
   offerName: 'GewinodeRaven-Site',
-  formEndpoint: 'https://apexai-experts.com/homeMailAction.php',
+  formEndpoint: 'https://theunion-ai.com/dorovio-au.php',
   tagline: 'AI-powered trading, engineered for Australia',
 };
 
