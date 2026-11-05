@@ -3,6 +3,9 @@ import Icon from '@/components/Icon';
 import RegistrationForm from '@/components/RegistrationForm';
 import { HERO } from '@/data/content';
 
+// Registration form temporarily hidden - flip to true to restore it.
+const SHOW_FORM = false;
+
 export default function Hero() {
   return (
     <section className="hero">
@@ -10,7 +13,7 @@ export default function Hero() {
       <div className="hero__glow hero__glow--two" />
 
       <div className="container">
-        <div className="hero__inner">
+        <div className={`hero__inner${SHOW_FORM ? '' : ' hero__inner--single'}`}>
           <div className="hero__copy">
             <h1 className="hero__title">
               {HERO.titleLines[0]}
@@ -37,19 +40,21 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="terminal">
-            <div className="terminal__bar">
-              <span className="terminal__dots">
-                <span className="t--r" />
-                <span className="t--a" />
-                <span className="t--g" />
-              </span>
-              gewinode-raven - register
+          {SHOW_FORM && (
+            <div className="terminal">
+              <div className="terminal__bar">
+                <span className="terminal__dots">
+                  <span className="t--r" />
+                  <span className="t--a" />
+                  <span className="t--g" />
+                </span>
+                gewinode-raven - register
+              </div>
+              <div className="terminal__body">
+                <RegistrationForm idPrefix="hero" />
+              </div>
             </div>
-            <div className="terminal__body">
-              <RegistrationForm idPrefix="hero" />
-            </div>
-          </div>
+          )}
         </div>
       </div>
     </section>

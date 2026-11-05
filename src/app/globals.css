@@ -405,6 +405,24 @@ button {
   padding-bottom: 40px;
 }
 
+/* Form hidden: single centered column */
+.hero__inner--single {
+  grid-template-columns: 1fr;
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero__inner--single .hero__sub {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero__inner--single .hero__cta,
+.hero__inner--single .hero__trust {
+  justify-content: center;
+}
+
 .hero__kicker {
   display: inline-flex;
   align-items: center;

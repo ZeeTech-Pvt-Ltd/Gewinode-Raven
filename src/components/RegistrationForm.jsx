@@ -102,6 +102,12 @@ export default function RegistrationForm({
     setFormError('');
     setSuccess('');
 
+    // Site-wide kill switch - no request leaves the browser while disabled.
+    if (!SITE.formEnabled) {
+      setFormError('Registrations are temporarily paused. Please check back soon.');
+      return;
+    }
+
     const data = Object.fromEntries(new FormData(e.target).entries());
     const errs = {};
 
